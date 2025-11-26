@@ -69,12 +69,17 @@ function App() {
 
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-content">
-          <h1>Find Trusted Service Providers<br /><span className="gradient-text">In Minutes, Not Days</span></h1>
-          <p>HNDY connects you with verified professionals in the Philippines. From plumbing to HVAC, get instant matches powered by AI.</p>
-          <div className="hero-buttons">
-            <button onClick={() => setShowCustomerWaitlist(true)} className="btn-primary">I Need a Service</button>
-            <button onClick={() => setShowProviderWaitlist(true)} className="btn-secondary">I'm a Provider</button>
+        <div className="hero-container">
+          <div className="hero-content">
+            <h1>Find Trusted Service Providers<br /><span className="gradient-text">In Minutes, Not Days</span></h1>
+            <p>HNDY connects you with verified professionals in the Philippines. From plumbing to HVAC, get instant matches powered by AI.</p>
+            <div className="hero-buttons">
+              <button onClick={() => setShowCustomerWaitlist(true)} className="btn-primary">I Need a Service</button>
+              <button onClick={() => setShowProviderWaitlist(true)} className="btn-secondary">I'm a Provider</button>
+            </div>
+          </div>
+          <div className="hero-image">
+            <img src="/images/customer1.jpg" alt="Happy customer" className="customer-photo" />
           </div>
         </div>
       </section>
@@ -163,7 +168,7 @@ function App() {
               <button onClick={() => setShowProviderWaitlist(true)} className="btn-primary">Join as a Provider</button>
             </div>
             <div className="provider-visual">
-              <div className="provider-emoji">👨‍🔧👩‍🔧</div>
+              <img src="/images/provider1.jpg" alt="Professional service provider" className="provider-photo" />
             </div>
           </div>
         </div>
